@@ -13,7 +13,11 @@ repositories {
 }
 
 dependencies {
+    implementation(platform("io.projectreactor:reactor-bom:2022.0.1"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("io.projectreactor:reactor-core")
     testImplementation(kotlin("test"))
+
 }
 
 tasks.test {
